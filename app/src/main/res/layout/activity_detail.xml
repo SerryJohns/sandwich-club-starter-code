@@ -1,129 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="com.udacity.sandwichclub.DetailActivity">
 
-    <ImageView
-        android:id="@+id/image_iv"
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:adjustViewBounds="true"
-        android:contentDescription="@string/sandwich_picture_content_description"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
-
-    <TextView
-        android:id="@+id/main_name_tv"
-        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/image_iv"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_iv"
-        tools:text="Ham and Cheese Sandwich" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/description_tv"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        android:textSize="12sp"
-        android:typeface="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_name_tv"
-        tools:text="A ham and cheese sandwich is a common type of sandwich. It is made by putting cheese and sliced ham
+        <ImageView
+            android:id="@+id/image_iv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/sandwich_picture_content_description"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/main_name_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/image_iv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_iv"
+            tools:text="Ham and Cheese Sandwich" />
+
+        <TextView
+            android:id="@+id/description_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textSize="12sp"
+            android:typeface="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_name_tv"
+            tools:text="A ham and cheese sandwich is a common type of sandwich. It is made by putting cheese and sliced ham
             between two slices of bread. The bread is sometimes buttered and or toasted. Vegetables like lettuce, tomato, onion or pickle slices can also be included. Various kinds of
             mustard and mayonnaise are also common." />
 
-    <View
-        android:id="@+id/horizontal_line"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:color/darker_gray"
-        app:layout_constraintEnd_toEndOf="@+id/description_tv"
-        app:layout_constraintStart_toStartOf="@+id/description_tv"
-        app:layout_constraintTop_toBottomOf="@+id/description_tv" />
+        <View
+            android:id="@+id/horizontal_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="@+id/description_tv"
+            app:layout_constraintStart_toStartOf="@+id/description_tv"
+            app:layout_constraintTop_toBottomOf="@+id/description_tv" />
 
-    <TextView
-        android:id="@+id/origin_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/detail_origin_label"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/horizontal_line"
-        app:layout_constraintTop_toBottomOf="@+id/horizontal_line" />
+        <TextView
+            android:id="@+id/origin_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/detail_origin_label"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/horizontal_line"
+            app:layout_constraintTop_toBottomOf="@+id/horizontal_line" />
 
-    <TextView
-        android:id="@+id/origin_tv"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/horizontal_line"
-        app:layout_constraintStart_toEndOf="@+id/origin_label"
-        app:layout_constraintTop_toTopOf="@+id/origin_label"
-        tools:text="Austria" />
+        <TextView
+            android:id="@+id/origin_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/horizontal_line"
+            app:layout_constraintStart_toEndOf="@+id/origin_label"
+            app:layout_constraintTop_toTopOf="@+id/origin_label"
+            tools:text="Austria" />
 
-    <TextView
-        android:id="@+id/also_known_as_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/detail_also_known_as_label"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/origin_label"
-        app:layout_constraintTop_toBottomOf="@+id/origin_label" />
+        <TextView
+            android:id="@+id/also_known_as_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/detail_also_known_as_label"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/origin_label"
+            app:layout_constraintTop_toBottomOf="@+id/origin_label" />
 
-    <TextView
-        android:id="@+id/also_known_as_tv"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/origin_tv"
-        app:layout_constraintStart_toEndOf="@+id/also_known_as_label"
-        app:layout_constraintTop_toTopOf="@+id/also_known_as_label"
-        tools:text="Bosner" />
+        <TextView
+            android:id="@+id/also_known_as_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/origin_tv"
+            app:layout_constraintStart_toEndOf="@+id/also_known_as_label"
+            app:layout_constraintTop_toTopOf="@+id/also_known_as_label"
+            tools:text="Bosner" />
 
-    <TextView
-        android:id="@+id/ingredients_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/detail_ingredients_label"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/also_known_as_label"
-        app:layout_constraintTop_toBottomOf="@+id/also_known_as_label" />
+        <TextView
+            android:id="@+id/ingredients_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/detail_ingredients_label"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/also_known_as_label"
+            app:layout_constraintTop_toBottomOf="@+id/also_known_as_label" />
 
-    <TextView
-        android:id="@+id/ingredients_tv"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/also_known_as_tv"
-        app:layout_constraintStart_toEndOf="@+id/ingredients_label"
-        app:layout_constraintTop_toTopOf="@+id/ingredients_label"
-        tools:text="Sliced bread, Cheese, Ham" />
+        <TextView
+            android:id="@+id/ingredients_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/also_known_as_tv"
+            app:layout_constraintStart_toEndOf="@+id/ingredients_label"
+            app:layout_constraintTop_toTopOf="@+id/ingredients_label"
+            tools:text="Sliced bread, Cheese, Ham" />
 
-</android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
